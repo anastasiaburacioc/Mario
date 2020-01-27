@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mario in action. CSS Selectors!</title>
+    <link rel="icon" href="mario.png">
+    <style>
+        section{
+            width: 250px;
+            height: 100px;
+            border: 1px solid #333;
+            position: relative;
+        }
+        section .mario,
+        section .cactus {
+            width: 48px;
+            height: 48px;
+            border:1px solid darkgreen;
+            position: absolute;
+        }
+        section .mario{
+            background-image: url(./mario.png);
+        }
+        div[class="mario"]{
+            top: 50px;
+        }
+        section .cactus{
+            background-image: url(./cactus.png);
+            left: 50px;
+            top: 50px;
+        }
+        #episode-2 .mario{
+            left: 50px;
+            top: 0;
+        }
+        #episode-3 .mario{
+            left: 100px;
+        }
+        #episode-4 .mario{
+            right: 50px;
+        }
+        #episode-5 .mario{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Episode-1</h2>
+    <section id="episode-1">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>
+
+    <h2>Episode-2</h2>
+    <section id="episode-2">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>
+
+    <h2>Episode-3</h2>
+    <section id="episode-3">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>
+
+    <h2>Episode-4</h2>
+    <section id="episode-4">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>
+
+    <h2>Episode-5</h2>
+    <section id="episode-5">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>  
+
+</body>
+</html>
